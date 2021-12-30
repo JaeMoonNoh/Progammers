@@ -53,7 +53,7 @@ vector<int> solution(vector<string> genres, vector<int> plays)
 	for(int i = 0; i < genres.size(); i++)
 	{
 		m[genres[i]] += plays[i];
-		m1[genres[i]].push({i,plays[i]});
+		m1[genres[i]].push_back({i,plays[i]});
 	}
 	
 	for(auto &c : m1)
